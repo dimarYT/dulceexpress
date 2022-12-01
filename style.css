@@ -1,0 +1,520 @@
+html{
+    font-family: system-ui;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(179,100%, 89%);
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/*index*/
+h1 .a1{
+  position: absolute;
+width:320px;
+height: 350px;
+left: 204px;
+top: 166px;
+
+background: #F7FA82;
+border: 1px solid #000000;
+border-radius: 50px 50px;
+box-shadow: 20px 20px 20px rgb(0,0,0,0.5)
+
+}
+ .a1{
+  position: absolute;
+  width: 180px;
+  height: 138px;
+  left: 228px;
+  top: 275px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Hero */
+
+.hero{
+    background:  center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Menu Header PG */
+
+header.main-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+   
+  .header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    z-index: 999;
+  }
+   
+  .wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+  }
+   
+  .logo-header{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+  }
+   
+  .nav-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+   
+  .nav-wrap-header{
+    display: flex;
+    flex-basis: 50%;
+  }
+   
+  ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+   
+  ul.main-menu #nav-main-contact{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: #FFC300;
+    color: #fff;
+  }
+   
+  li.menu-item{
+    margin: .75rem;
+    display: flex;
+  }
+   
+  li.menu-item a{
+    padding: .5rem 1rem;
+    color: #222;
+  }
+   
+  li.menu-item a:hover{
+    color: #FFC300;
+  }
+   
+  i.toggle-menu{
+    display: none;
+    background-color: #fff;
+    border: none;
+    z-index: 9999;
+  }
+   
+  i.toggle-menu img{
+    width: 27px;
+    z-index: 99;
+  }
+   
+  input#check{
+    display: none;
+  }
+
+  @media (min-width:880px){
+    .header-wrap{
+      padding: .5rem 5rem;
+    }
+  }
+   
+  @media (max-width:768px){
+    header{
+      margin-bottom: 4rem;
+    }
+    .header-wrap{
+      position: fixed;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      padding: 0;
+      top: 0;
+      z-index: 9999;
+      height: 60px;
+    }
+    .wrap-logo-header{
+      position: fixed;
+      z-index: 999;
+      top: 3%;
+      left: 3%;
+    }
+    i.toggle-menu{
+      display: flex;
+    }
+    ul.main-menu,#nav-main-contact{
+      display: none;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
+    ul.main-menu{
+      position: fixed;
+      background-color: #fff;
+    }
+    label.checkbtn{
+      position: fixed;
+      right: 3%;
+      top: 3%;
+      z-index: 9999;
+    }
+    #check:checked ~ ul{
+      display: flex;
+      z-index: 9;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      top: 0;
+      font-size: 2rem;
+    }
+   
+}
+
+/* Footer */
+
+footer{
+    background-color: #fff;
+    color: var(--second-c);
+  }
+  footer ul{
+    padding:0;
+  }
+  footer li{
+    list-style: none;
+  }
+  .wrap-footer{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  .logo-element_footer{
+    display: flex;
+    margin: 2rem 0;
+  }
+  .logo-element_footer img{
+    max-height: 75px;
+  }
+  .element-footer h5{
+    margin: 1rem 0;
+  }
+  .text-element-footer li{
+    line-height: 2;
+  }
+  .link-elements-footer li a{
+    color:#FFC300;
+  }
+  .rrss-element-footer ul{
+    display: flex;
+    flex-flow: wrap;
+  }
+  .rrss-element-footer img{
+    width: 35px;
+  }
+  .rrss-element-footer li{
+    margin-right: 1rem;
+  }
+  .footer-creds{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .legal-creds ul{
+    display: flex;
+    flex-flow: row;
+  }
+  .legal-creds ul li{
+    padding-right: 1rem;
+  }
+  .legal-creds ul a{
+    color: #576171;
+    font-size: .9rem;
+}
+
+@media (max-width:768px){
+    .wrap-footer{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:480px){
+    .wrap-footer{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  @media (max-width:320px){
+    .footer-creds{
+      flex-flow: column;
+    }
+}
+
+/* Pg Contacto */
+
+.color1{
+font-family: 'Courier New', Courier, monospace;
+color: #222;
+position: absolute;
+width: 320px;
+height: 52px;
+left: 350px;
+top: 444px;
+}
+.color2{
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0px 2px;
+  
+}
+.hero-page{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url(img/COCOS\ CUPCAKES.jpg) center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-hero-page{
+  color: #fff;
+  padding: 1rem;
+}
+
+.section{
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+
+/* Formulario */
+
+.formulario{
+  display: flex;
+  flex-flow: column;
+}
+
+.formulario input, .formulario textarea{
+  margin: .5rem 0;
+  padding: .5rem .2rem;
+}
+
+.formulario button{
+  width: fit-content;
+  border: none;
+  padding: .5rem 1rem;
+  background-color: #FFC300;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width:640px){
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* IMAGENES CENTRALES */
+ 
+:root{
+  --colorcaja: hsl(60,80%,70%);
+}
+
+.TORTAS{
+  width: 250px;
+  height: 400px;
+  background-color: var(--colorcaja);  
+  margin-top: 150px;
+  margin-left: 10%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);  
+}
+
+.CAFES{
+  width: 250px;
+  height: 400px;
+  background-color: var(--colorcaja);  
+  margin-top: 50px;
+  margin-left: 10%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
+}
+
+.CUPCAKES{
+  width: 250px;
+  height: 400px;
+  background-color: var(--colorcaja);  
+  margin-top: -620px;
+  margin-left: 40%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
+}
+
+.HELADOS{
+  width: 250px;
+  height: 400px;
+  background-color: var(--colorcaja);  
+  margin-top: -630px;
+  margin-left: 70%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
+}
+
+.BEBIDAS{
+  width: 250px;
+  height: 400px;
+  background-color: var(--colorcaja);  
+  margin-top: 50px;
+  margin-left: 70%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
+}
+
+.imgtorta{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border-radius: 50% 50%;
+  background-repeat: no-repeat;  
+  background-image: url(img/pasteles/pastel\ de\ chocolate\,\ fresas\,.jpg);
+  margin-left: 20%;
+  border: solid 1px black;
+  
+}
+
+.imgcafes{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border-radius: 50% 50%;
+  background-repeat: no-repeat;  
+  background-image: url(img/cafes/Cappuchino.jpg);
+  margin-left: 20%;
+  border: solid 1px black;
+}
+
+.imgcupcakes{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border-radius: 50% 50%;
+  background-repeat: no-repeat;  
+  background-image: url(img/cupcakes/Cupcakes\ de\ Chocolate\ con\ Crema\ de\ Lucuma.jpg);
+  margin-left: 20%;
+  border: solid 1px black;
+}
+
+.imghelados{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border-radius: 50% 50%;
+  background-repeat: no-repeat;  
+  background-image: url(img/helados/Helado\ de\ Choco-Chips.jpg);
+  margin-left: 20%;
+  border: solid 1px black;
+}
+
+.imgbebidas{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border-radius: 50% 50%;
+  background-repeat: no-repeat;  
+  background-image: url(img/bebidas/Limonada\ Frozen.jpg);
+  margin-left: 20%;
+  border: solid 1px black;
+}
+
+.tit{
+  margin-left: auto;
+  margin: center;
+  text-align: center;
+  font-weight: bold;  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+
+.descripciontt{
+  margin-left:15px;
+  width: 220px;
+  text-align: center;
+  text-align: 100px;
+  line-height: 25px;
+  font-family: cursive;
+
+}
+
+.contactom{
+  width: 500px;
+  height: 500px;
+  /* background-color: white; */
+}
+
+h2 .contit{
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+
+.imgtra{
+  width: 500px;
+  height: 350px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-image: url(img/trabajadores/trabajadores\ 1.jpg);
+}
